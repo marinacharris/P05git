@@ -1,0 +1,10 @@
+let nombre = "Juan";
+let edad = 35;
+let estatura = 1.7;
+let casado= true;
+let num1 = prompt("Digite el número 1");
+let num2 = prompt("Digite el número 2");
+let resultado = parseInt(num1)+parseInt(num2);
+alert("El resultado es:"+resultado);
+document.write(edad);
+document.getElementById("t1").innerHTML = nombre;
