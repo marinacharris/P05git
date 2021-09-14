@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="aplicacion">
+        <p>Ingrese la edad:<input type="number" name="" id="" v-model="edad"></p>
+        <p v-if="edad>0 && edad<18">La persona es menor de edad</p>
+        <p v-else-if = "edad>=18 && edad <=65">La persona es un adulto</p>
+        <p v-else>La persona es de la tercera edad</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    
+    <script>
+        var app = new Vue({
+            el:'#aplicacion',
+            data:{
+                edad :0
+            }
+        })
+    </script>
+</body>
+</html>
